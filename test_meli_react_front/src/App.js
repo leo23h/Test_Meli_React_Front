@@ -2,6 +2,7 @@ import './App.css';
 import logo from './assets/Logo_ML_2x.png'
 import search_logo from './assets/ic_Search_2x.png'
 import ProductList from './components/ProductList';
+// import ProductDetail from './components/ProductDetail';
 import {
   Routes,
   Route,
