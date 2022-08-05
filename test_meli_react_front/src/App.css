@@ -1,3 +1,5 @@
+
+
 .App-header{
   width: 100%;
 }
@@ -30,7 +32,7 @@
 .inp-search{
   width: 100%;
   height: 31px;
-  font-size: 16px;
+  font-size: 18px;
   color: #999999;
   border-radius: 2px;
   border: 0px;
@@ -38,7 +40,11 @@
 
 .inp-search::placeholder {
   color: #999999;
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.inp-search:focus-visible{
+  outline: none;
 }
 
 .logo-search{
@@ -55,6 +61,7 @@
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   border: 0px;
+  width: 40px;
 }
 
 .img-search{
@@ -63,4 +70,89 @@
 
 .py-7{
   padding: 7px 0px;
+}
+
+.body-list{
+  background-color: #EEEEEE;
+  height: 100%;
+  width: 100%;
+}
+
+.breadcrumb{
+  font-size: 14px;
+  color: #999999;
+  padding: 16px 0px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.img-item{
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+}
+
+.container-body{
+  margin: 0px 10em 0 10em;
+  padding-bottom: 10em;
+}
+
+.row{
+  display: flex;
+}
+
+.m-16{
+  margin: 16px;
+}
+
+.item-detail{
+  width: 60%;
+}
+
+.txt-price{
+  padding-top: 40px;
+  font-size: 24px;
+  color: #333333;
+  padding-bottom: 20px;
+}
+
+.txt-item-name{
+  font-size: 18px;
+  color: #333333;
+}
+
+.txt-item-status{
+  font-size: 18px;
+  color: #333333;
+}
+
+.item-city{
+  width: 20%;
+  padding-top: 60px;
+}
+
+.txt-city{
+  font-size: 12px;
+  color: #999999;
+}
+
+.c-shipp{
+  padding-left: 10px;
+}
+
+.line{
+  margin: 0px 16px;
+  border: 1px solid #EEEEEE;
+}
+
+.container-row{
+  background: #FFFFFF;
+}
+
+.mb-30{
+  margin-bottom: 30px;
+}
+
+.pb-0{
+  padding-bottom: 0px;
 }

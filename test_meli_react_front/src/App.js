@@ -1,13 +1,19 @@
 import './App.css';
 import logo from './assets/Logo_ML_2x.png'
 import search_logo from './assets/ic_Search_2x.png'
+import ProductList from './components/ProductList';
+import {
+  Routes,
+  Route,
+  BrowserRouter
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <div className='header'>
         <div className='container'>
-          <div className='w-10 py-7'>
+          <div className='w-10 py-7 pb-0'>
             <img src={logo} alt='logo' className='img-logo'></img>
           </div>
           <div className='w-90 py-7 pb-0'>
@@ -20,6 +26,13 @@ function App() {
           </div>
         </div>
       </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' exact>
+             <Route path='item' element={<ProductList />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
