@@ -3,6 +3,7 @@ import './App.css';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import LayoutView from './components/LayoutView';
+import NotFound from './components/NotFound';
 
 import {
   Routes,
@@ -15,8 +16,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' exact element={<LayoutView />}/>
-          <Route path='/item' element={<ProductList />} />
+          <Route path='/items' element={<ProductList />} />
           <Route path='/items/:id' element={<ProductDetail />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
   );

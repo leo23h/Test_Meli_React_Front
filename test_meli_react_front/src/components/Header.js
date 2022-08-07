@@ -12,13 +12,12 @@ function Header() {
 
   const addUrlQueryParam = () => {
      console.log("inp_search.current.value", inp_search.current.value);
-     navigate(`/item?search=${inp_search.current.value}`);
+     navigate(`/items?search=${inp_search.current.value}`);
   }
 
   const handleKeyPress = (event) => {
     if(event.keyCode == 13){
-      console.log('enter press here! ');
-      navigate(`/item?search=${inp_search.current.value}`);
+        addUrlQueryParam();
     }
   }
 
@@ -26,7 +25,9 @@ function Header() {
     <div className='header'>
         <div className='container'>
           <div className='w-10 py-7 pb-0'>
-            <img src={logo} alt='logo' className='img-logo'></img>
+            <a href={'/'}>
+               <img src={logo} alt='logo' className='img-logo'></img>
+            </a>
           </div>
           <div className='w-90 py-7 pb-0'>
             <div className='group'>
